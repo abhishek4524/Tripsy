@@ -1,5 +1,8 @@
 import logging
+import os
 import sys
+import threading
+from http.server import HTTPServer, BaseHTTPRequestHandler
 import config
 from bot.handlers import (
     start_conv_handler,
@@ -21,19 +24,52 @@ logging.basicConfig(
 )
 logger = logging.getLogger("GoaConcierge.Main")
 
+
+class HealthCheckHandler(BaseHTTPRequestHandler):
+    """
+    Lightweight HTTP Request Handler for Render Web Service health checks.
+    """
+    def do_GET(self):
+        self.send_response(200)
+        self.send_header("Content-type", "text/plain")
+        self.end_headers()
+        self.wfile.write(b"Goa Trip Concierge Bot is Live and Healthy!")
+
+    def log_message(self, format, *args):
+        pass  # Suppress default HTTP server access logs
+
+
+def start_health_server():
+    """
+    Starts a background HTTP server on the PORT assigned by Render.
+    """
+    try:
+        port = int(os.getenv("PORT", 8000))
+        server = HTTPServer(("0.0.0.0", port), HealthCheckHandler)
+        logger.info(f"Health check HTTP server started on port {port}")
+        server.serve_forever()
+    except Exception as e:
+        logger.error(f"Failed to start health check HTTP server: {e}")
+
+
 async def post_init(application):
     """
     Hook executed after python-telegram-bot starts its asyncio event loop.
-    This guarantees that AsyncIOScheduler starts inside a running event loop.
+    Guarantees AsyncIOScheduler starts inside a running event loop.
     """
     logger.info("Event loop running. Starting APScheduler in post_init hook...")
     setup_scheduler(bot=application.bot, active_users=ACTIVE_USERS)
+
 
 def main():
     """
     Main entry point for starting the Goa Trip Concierge Telegram Bot.
     """
     try:
+        # Start lightweight health check server for Render Web Service port binding
+        if os.getenv("PORT") or os.getenv("RENDER"):
+            threading.Thread(target=start_health_server, daemon=True).start()
+
         # Verify BOT_TOKEN configuration
         if not config.BOT_TOKEN or config.BOT_TOKEN == "your_telegram_bot_token_here":
             logger.error("BOT_TOKEN is missing or set to default placeholder in .env!")
@@ -65,6 +101,7 @@ def main():
 
     except Exception as e:
         logger.critical(f"Critical error in bot main thread: {e}", exc_info=True)
+
 
 if __name__ == '__main__':
     main()
