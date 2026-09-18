@@ -1,0 +1,400 @@
+{
+  "restaurants": [
+    {
+      "name": "Gunpowder",
+      "area": "Assagao",
+      "cuisine": "South Indian / Coastal",
+      "price_range": "$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Thalassa",
+      "area": "Siolim",
+      "cuisine": "Greek / Mediterranean",
+      "price_range": "$$$",
+      "best_for": "Dinner",
+      "vibe": "Beachside"
+    },
+    {
+      "name": "Vinayak Family Restaurant",
+      "area": "Assagao",
+      "cuisine": "Goan Seafood",
+      "price_range": "$",
+      "best_for": "Lunch",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Pousada by the Beach",
+      "area": "Calangute",
+      "cuisine": "Goan / Seafood",
+      "price_range": "$$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Beachside"
+    },
+    {
+      "name": "Viva Panjim",
+      "area": "Panjim",
+      "cuisine": "Traditional Goan",
+      "price_range": "$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Fisherman's Wharf",
+      "area": "Cavelossim",
+      "cuisine": "Goan / Seafood",
+      "price_range": "$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Beachside"
+    },
+    {
+      "name": "Joseph Bar",
+      "area": "Panjim",
+      "cuisine": "Goan Pub Snacks & Feni",
+      "price_range": "$",
+      "best_for": "Evening",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Burger Factory",
+      "area": "Anjuna",
+      "cuisine": "Gourmet Burgers",
+      "price_range": "$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Antares Restaurant & Beach Club",
+      "area": "Vagator",
+      "cuisine": "Australian / International",
+      "price_range": "$$$",
+      "best_for": "Dinner",
+      "vibe": "Beachside"
+    },
+    {
+      "name": "Sublime",
+      "area": "Morjim",
+      "cuisine": "European Fusion",
+      "price_range": "$$$",
+      "best_for": "Dinner",
+      "vibe": "Upscale"
+    },
+    {
+      "name": "Mum's Kitchen",
+      "area": "Panjim",
+      "cuisine": "Authentic Goan",
+      "price_range": "$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Purple Martini",
+      "area": "Anjuna",
+      "cuisine": "Mediterranean / Cocktails",
+      "price_range": "$$$",
+      "best_for": "Evening/Dinner",
+      "vibe": "Beachside"
+    },
+    {
+      "name": "Olive Bar & Kitchen",
+      "area": "Vagator",
+      "cuisine": "Mediterranean",
+      "price_range": "$$$",
+      "best_for": "Dinner",
+      "vibe": "Upscale"
+    },
+    {
+      "name": "Bomras",
+      "area": "Anjuna",
+      "cuisine": "Burmese / South-East Asian",
+      "price_range": "$$$",
+      "best_for": "Dinner",
+      "vibe": "Upscale"
+    },
+    {
+      "name": "Martin's Corner",
+      "area": "Betalbatim",
+      "cuisine": "Goan Seafood",
+      "price_range": "$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Infantaria Bakery",
+      "area": "Calangute",
+      "cuisine": "Bakery / Goan Breakfast",
+      "price_range": "$",
+      "best_for": "Breakfast",
+      "vibe": "Casual"
+    },
+    {
+      "name": "Cafe Bodega",
+      "area": "Panjim",
+      "cuisine": "Cafe & Bakery",
+      "price_range": "$$",
+      "best_for": "Breakfast/Lunch",
+      "vibe": "Casual"
+    },
+    {
+      "name": "La Plage",
+      "area": "Ashwem",
+      "cuisine": "French / Continental",
+      "price_range": "$$$",
+      "best_for": "Lunch/Dinner",
+      "vibe": "Beachside"
+    }
+  ],
+  "beaches": [
+    {
+      "name": "Baga Beach",
+      "area": "North Goa",
+      "vibe": "Party"
+    },
+    {
+      "name": "Anjuna Beach",
+      "area": "North Goa",
+      "vibe": "Party"
+    },
+    {
+      "name": "Vagator Beach",
+      "area": "North Goa",
+      "vibe": "Party"
+    },
+    {
+      "name": "Calangute Beach",
+      "area": "North Goa",
+      "vibe": "Family"
+    },
+    {
+      "name": "Candolim Beach",
+      "area": "North Goa",
+      "vibe": "Family"
+    },
+    {
+      "name": "Morjim Beach",
+      "area": "North Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Ashwem Beach",
+      "area": "North Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Arambol Beach",
+      "area": "North Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Mandrem Beach",
+      "area": "North Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Palolem Beach",
+      "area": "South Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Agonda Beach",
+      "area": "South Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Colva Beach",
+      "area": "South Goa",
+      "vibe": "Family"
+    },
+    {
+      "name": "Benaulim Beach",
+      "area": "South Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Butterfly Beach",
+      "area": "South Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Cola Beach",
+      "area": "South Goa",
+      "vibe": "Calm"
+    },
+    {
+      "name": "Cavelossim Beach",
+      "area": "South Goa",
+      "vibe": "Family"
+    },
+    {
+      "name": "Miramar Beach",
+      "area": "North Goa",
+      "vibe": "Family"
+    }
+  ],
+  "activities": [
+    {
+      "name": "Anjuna Flea Market",
+      "area": "Anjuna",
+      "type": "Shopping",
+      "time_needed": "3-4 hours",
+      "notes": "Wednesday only, great for souvenirs & clothes"
+    },
+    {
+      "name": "Arpora Saturday Night Market",
+      "area": "Arpora",
+      "type": "Shopping",
+      "time_needed": "3-4 hours",
+      "notes": "Saturday evening (Nov to April), live music & stalls"
+    },
+    {
+      "name": "Water Sports at Baga / Calangute",
+      "area": "Baga",
+      "type": "Water-sports",
+      "time_needed": "2-3 hours",
+      "notes": "Parasailing, Banana Boat, Jet Ski, Bumper Ride"
+    },
+    {
+      "name": "Scuba Diving & Snorkeling at Grande Island",
+      "area": "Vasco da Gama",
+      "type": "Water-sports",
+      "time_needed": "Full day (6-7 hours)",
+      "notes": "Includes boat ride, equipment & underwater photos"
+    },
+    {
+      "name": "Mandovi River Sunset Cruise",
+      "area": "Panjim",
+      "type": "Sightseeing",
+      "time_needed": "1-2 hours",
+      "notes": "Daily evening departures with Goan folk dance performance"
+    },
+    {
+      "name": "Old Goa Churches Heritage Tour",
+      "area": "Old Goa",
+      "type": "Sightseeing",
+      "time_needed": "2-3 hours",
+      "notes": "Visit Basilica of Bom Jesus & Se Cathedral"
+    },
+    {
+      "name": "Fontainhas Latin Quarter Heritage Walk",
+      "area": "Panjim",
+      "type": "Sightseeing",
+      "time_needed": "2 hours",
+      "notes": "Colorful Portuguese heritage streets & cafes"
+    },
+    {
+      "name": "Dudhsagar Waterfalls Trek & Jeep Safari",
+      "area": "Mollem",
+      "type": "Sightseeing",
+      "time_needed": "Full day (7-8 hours)",
+      "notes": "Jeep ride through Bhagwan Mahavir Wildlife Sanctuary"
+    },
+    {
+      "name": "Tropical Spice Plantation Tour",
+      "area": "Ponda",
+      "type": "Sightseeing",
+      "time_needed": "3 hours",
+      "notes": "Guided spice walk with authentic buffet lunch"
+    },
+    {
+      "name": "Club Cubana",
+      "area": "Arpora",
+      "type": "Nightlife",
+      "time_needed": "4-5 hours",
+      "notes": "Nightclub in the sky with hilltop pool"
+    },
+    {
+      "name": "Tito's Lane Party Night",
+      "area": "Baga",
+      "type": "Nightlife",
+      "time_needed": "4-5 hours",
+      "notes": "Iconic strip of clubs including Cafe Mambo & Tito's"
+    },
+    {
+      "name": "Kayaking in Sal Backwaters",
+      "area": "South Goa",
+      "type": "Water-sports",
+      "time_needed": "2 hours",
+      "notes": "Serene early morning or sunset backwater kayaking"
+    },
+    {
+      "name": "Dolphin Spotting Boat Trip",
+      "area": "Palolem",
+      "type": "Sightseeing",
+      "time_needed": "1-2 hours",
+      "notes": "Best in early morning (7 AM - 9 AM)"
+    },
+    {
+      "name": "Chapora Fort Sunset Visit",
+      "area": "Vagator",
+      "type": "Sightseeing",
+      "time_needed": "1-2 hours",
+      "notes": "Famous 'Dil Chahta Hai' sunset point overlooking Chapora river"
+    },
+    {
+      "name": "Aguada Fort & Lighthouse Tour",
+      "area": "Candolim",
+      "type": "Sightseeing",
+      "time_needed": "1-2 hours",
+      "notes": "17th-century Portuguese fort with sea views"
+    },
+    {
+      "name": "Panjim Local Market Shopping",
+      "area": "Panjim",
+      "type": "Shopping",
+      "time_needed": "2 hours",
+      "notes": "Cashew nuts, Goan feni, spices & handicrafts"
+    },
+    {
+      "name": "Arambol Sunset Drum Circle",
+      "area": "Arambol",
+      "type": "Sightseeing",
+      "time_needed": "2 hours",
+      "notes": "Daily informal sunset musical gathering on the beach"
+    }
+  ],
+  "transport": [
+    {
+      "option": "Scooter / Bike Rental",
+      "type": "Rental",
+      "price_range": "₹300 - ₹600 per day",
+      "notes": "Valid driving license required; helmet mandatory for rider"
+    },
+    {
+      "option": "Self-Drive Car Rental (Swift/Thar/i20)",
+      "type": "Rental",
+      "price_range": "₹1,500 - ₹4,000 per day",
+      "notes": "Security deposit required; fuel extra"
+    },
+    {
+      "option": "Private Taxi",
+      "type": "Taxi",
+      "price_range": "₹2,500 - ₹3,500 per day (full day 80km)",
+      "notes": "Prepaid counters at airport/railway station or hotel taxi desk"
+    },
+    {
+      "option": "Pilot (Bike Taxi)",
+      "type": "Taxi",
+      "price_range": "₹50 - ₹300 per trip",
+      "notes": "Unique Goan motorcycle taxi service for single travelers"
+    },
+    {
+      "option": "Auto Rickshaw",
+      "type": "Auto",
+      "price_range": "₹100 - ₹500 per trip",
+      "notes": "Best for short distances within Panjim, Margao, or local towns"
+    },
+    {
+      "option": "GoaMiles App Taxi",
+      "type": "Taxi",
+      "price_range": "Govt approved distance-based rates",
+      "notes": "Official app-based taxi service in Goa"
+    },
+    {
+      "option": "Kadamba / Local Bus",
+      "type": "Bus",
+      "price_range": "₹20 - ₹100 per trip",
+      "notes": "Very economical inter-city connectivity between Panjim, Mapusa, Margao"
+    }
+  ]
+}
