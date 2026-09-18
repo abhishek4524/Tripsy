@@ -21,6 +21,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger("GoaConcierge.Main")
 
+async def post_init(application):
+    """
+    Hook executed after python-telegram-bot starts its asyncio event loop.
+    This guarantees that AsyncIOScheduler starts inside a running event loop.
+    """
+    logger.info("Event loop running. Starting APScheduler in post_init hook...")
+    setup_scheduler(bot=application.bot, active_users=ACTIVE_USERS)
+
 def main():
     """
     Main entry point for starting the Goa Trip Concierge Telegram Bot.
@@ -34,10 +42,12 @@ def main():
             sys.exit(1)
 
         logger.info("Initializing Telegram Bot Application...")
-        application = ApplicationBuilder().token(config.BOT_TOKEN).build()
-
-        # Initialize APScheduler background jobs
-        setup_scheduler(bot=application.bot, active_users=ACTIVE_USERS)
+        application = (
+            ApplicationBuilder()
+            .token(config.BOT_TOKEN)
+            .post_init(post_init)  # Ensures event loop is active before starting APScheduler
+            .build()
+        )
 
         # Register conversation and command handlers
         application.add_handler(start_conv_handler)                                            # /start stay area setup
